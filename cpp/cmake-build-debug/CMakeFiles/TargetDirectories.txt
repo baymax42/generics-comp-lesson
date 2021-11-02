@@ -1,0 +1,6 @@
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/cpp_box.dir
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/cpp_duck_typing.dir
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/cpp_ct_list.dir
+/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/CMakeFiles/cpp_spec.dir

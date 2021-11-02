@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/cpp_ct_list.dir/factorial.cpp.o -o cpp_ct_list 
