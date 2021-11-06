@@ -37,6 +37,50 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cpp_counter">
+				<Option output="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/cpp_counter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_counter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cpp_counter/fast">
+				<Option output="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/cpp_counter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_counter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="cpp_box">
 				<Option output="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug/cpp_box" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/baymax42/Projects/generics-comp/cpp/cmake-build-debug"/>
@@ -216,6 +260,9 @@
 		</Build>
 		<Unit filename="/home/baymax42/Projects/generics-comp/cpp/box.cpp">
 			<Option target="cpp_box"/>
+		</Unit>
+		<Unit filename="/home/baymax42/Projects/generics-comp/cpp/counter.cpp">
+			<Option target="cpp_counter"/>
 		</Unit>
 		<Unit filename="/home/baymax42/Projects/generics-comp/cpp/duck_typing.cpp">
 			<Option target="cpp_duck_typing"/>

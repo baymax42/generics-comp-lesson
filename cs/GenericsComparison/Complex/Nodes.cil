@@ -1,0 +1,188 @@
+.assembly _
+{
+    .custom instance void [System.Private.CoreLib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = (
+        01 00 08 00 00 00 00 00
+    )
+    .custom instance void [System.Private.CoreLib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = (
+        01 00 01 00 54 02 16 57 72 61 70 4e 6f 6e 45 78
+        63 65 70 74 69 6f 6e 54 68 72 6f 77 73 01
+    )
+    .custom instance void [System.Private.CoreLib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [System.Private.CoreLib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = (
+        01 00 07 01 00 00 00 00
+    )
+    .permissionset reqmin = (
+        2e 01 80 92 53 79 73 74 65 6d 2e 53 65 63 75 72
+        69 74 79 2e 50 65 72 6d 69 73 73 69 6f 6e 73 2e
+        53 65 63 75 72 69 74 79 50 65 72 6d 69 73 73 69
+        6f 6e 41 74 74 72 69 62 75 74 65 2c 20 53 79 73
+        74 65 6d 2e 50 72 69 76 61 74 65 2e 43 6f 72 65
+        4c 69 62 2c 20 56 65 72 73 69 6f 6e 3d 35 2e 30
+        2e 30 2e 30 2c 20 43 75 6c 74 75 72 65 3d 6e 65
+        75 74 72 61 6c 2c 20 50 75 62 6c 69 63 4b 65 79
+        54 6f 6b 65 6e 3d 37 63 65 63 38 35 64 37 62 65
+        61 37 37 39 38 65 15 01 54 02 10 53 6b 69 70 56
+        65 72 69 66 69 63 61 74 69 6f 6e 01
+    )
+    .hash algorithm 0x00008004 // SHA1
+    .ver 0:0:0:0
+}
+
+.class private auto ansi '<Module>'
+{
+} // end of class <Module>
+
+.class public auto ansi beforefieldinit Complex.Node`1<T>
+    extends [System.Private.CoreLib]System.Object
+{
+    // Fields
+    .field public !T _data
+
+    // Methods
+    .method public hidebysig specialname 
+        instance !T get_Data () cil managed 
+    {
+        // Method begins at RVA 0x2050
+        // Code size 7 (0x7)
+        .maxstack 8
+
+        IL_0000: ldarg.0
+        IL_0001: ldfld !0 class Complex.Node`1<!T>::_data
+        IL_0006: ret
+    } // end of method Node`1::get_Data
+
+    .method public hidebysig specialname 
+        instance void set_Data (
+            !T 'value'
+        ) cil managed 
+    {
+        // Method begins at RVA 0x2058
+        // Code size 25 (0x19)
+        .maxstack 8
+
+        IL_0000: nop
+        IL_0001: call class [System.Private.CoreLib]System.IO.TextWriter [System.Console]System.Console::get_Out()
+        IL_0006: ldstr "Node.setData"
+        IL_000b: callvirt instance void [System.Private.CoreLib]System.IO.TextWriter::Write(string)
+        IL_0010: nop
+        IL_0011: ldarg.0
+        IL_0012: ldarg.1
+        IL_0013: stfld !0 class Complex.Node`1<!T>::_data
+        IL_0018: ret
+    } // end of method Node`1::set_Data
+
+    .method public hidebysig 
+        instance void Boxing () cil managed 
+    {
+        // Method begins at RVA 0x2074
+        // Code size 26 (0x1a)
+        .maxstack 1
+        .locals init (
+            [0] int32 i,
+            [1] object o
+        )
+
+        IL_0000: nop
+        IL_0001: ldc.i4.s 42
+        IL_0003: stloc.0
+        IL_0004: ldloc.0
+        IL_0005: box [System.Private.CoreLib]System.Int32
+        IL_000a: stloc.1
+        IL_000b: ldc.i4.1
+        IL_000c: box [System.Private.CoreLib]System.Int32
+        IL_0011: stloc.1
+        IL_0012: ldloc.0
+        IL_0013: call void [System.Console]System.Console::WriteLine(int32)
+        IL_0018: nop
+        IL_0019: ret
+    } // end of method Node`1::Boxing
+
+    .method public hidebysig specialname rtspecialname 
+        instance void .ctor (
+            !T data
+        ) cil managed 
+    {
+        // Method begins at RVA 0x209a
+        // Code size 17 (0x11)
+        .maxstack 8
+
+        IL_0000: ldarg.0
+        IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
+        IL_0006: nop
+        IL_0007: nop
+        IL_0008: ldarg.0
+        IL_0009: ldarg.1
+        IL_000a: call instance void class Complex.Node`1<!T>::set_Data(!0)
+        IL_000f: nop
+        IL_0010: ret
+    } // end of method Node`1::.ctor
+
+    // Properties
+    .property instance !T Data()
+    {
+        .get instance !0 Complex.Node`1::get_Data()
+        .set instance void Complex.Node`1::set_Data(!0)
+    }
+
+} // end of class Complex.Node`1
+
+.class public auto ansi beforefieldinit Complex.CustomNode
+    extends class Complex.Node`1<int32>
+{
+    // Methods
+    .method public hidebysig specialname rtspecialname 
+        instance void .ctor (
+            int32 data
+        ) cil managed 
+    {
+        // Method begins at RVA 0x20ac
+        // Code size 10 (0xa)
+        .maxstack 8
+
+        IL_0000: ldarg.0
+        IL_0001: ldarg.1
+        IL_0002: call instance void class Complex.Node`1<int32>::.ctor(!0)
+        IL_0007: nop
+        IL_0008: nop
+        IL_0009: ret
+    } // end of method CustomNode::.ctor
+
+} // end of class Complex.CustomNode
+
+.class public auto ansi beforefieldinit Complex.Program
+    extends [System.Private.CoreLib]System.Object
+{
+    // Methods
+    .method public hidebysig static 
+        void Main (
+            string[] args
+        ) cil managed 
+    {
+        // Method begins at RVA 0x20b8
+        // Code size 10 (0xa)
+        .maxstack 1
+        .locals init (
+            [0] class Complex.CustomNode node
+        )
+
+        IL_0000: nop
+        IL_0001: ldc.i4.s 10
+        IL_0003: newobj instance void Complex.CustomNode::.ctor(int32)
+        IL_0008: stloc.0
+        IL_0009: ret
+    } // end of method Program::Main
+
+    .method public hidebysig specialname rtspecialname 
+        instance void .ctor () cil managed 
+    {
+        // Method begins at RVA 0x20ce
+        // Code size 8 (0x8)
+        .maxstack 8
+
+        IL_0000: ldarg.0
+        IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
+        IL_0006: nop
+        IL_0007: ret
+    } // end of method Program::.ctor
+
+} // end of class Complex.Program
+

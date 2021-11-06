@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple", "Simple\Simple.csproj", "{41739DC2-AD75-4A0E-863C-D4ACFA8404AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complex", "Complex\Complex.csproj", "{CAA425D1-6ED0-4785-ABBE-F33437C677FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statics", "Statics\Statics.csproj", "{A58CBAD4-163E-4BCE-A15D-C2515227CFE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41739DC2-AD75-4A0E-863C-D4ACFA8404AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41739DC2-AD75-4A0E-863C-D4ACFA8404AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41739DC2-AD75-4A0E-863C-D4ACFA8404AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41739DC2-AD75-4A0E-863C-D4ACFA8404AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA425D1-6ED0-4785-ABBE-F33437C677FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA425D1-6ED0-4785-ABBE-F33437C677FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA425D1-6ED0-4785-ABBE-F33437C677FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA425D1-6ED0-4785-ABBE-F33437C677FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58CBAD4-163E-4BCE-A15D-C2515227CFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58CBAD4-163E-4BCE-A15D-C2515227CFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58CBAD4-163E-4BCE-A15D-C2515227CFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58CBAD4-163E-4BCE-A15D-C2515227CFE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-/home/baymax42/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/baymax42/Projects/generics-comp/cpp
+/home/baymax42/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/baymax42/Projects/generics-comp/cpp
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/baymax42/Projects/generics-comp/cpp/cmake-build-debug
