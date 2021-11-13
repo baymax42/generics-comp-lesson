@@ -6,35 +6,16 @@
 #define CPP_PRINTERFACTORY_H
 
 #include <memory>
-#include <unordered_map>
 #include "Printer.h"
 #include "ConsolePrinter.h"
-#include "FilePrinter.h"
-#include "FactoryRegistry.h"
+#include "FactoryImplementation.h"
 
 typedef std::unique_ptr<Printer>(*PrinterGenerator)();
 
-
-class PrinterFactory {
-    using Registry = FactoryRegistry<PrinterGenerator>;
+class PrinterFactory : public FactoryImplementation<PrinterFactory, PrinterGenerator> {
 public:
-    template<typename T>
-    static PrinterGenerator getFactory() {
-        if (Registry::registeredPrinters.contains(getIdentifier<T>())) {
-            return Registry::registeredPrinters[getIdentifier<T>()];
-        }
+    static PrinterGenerator default_generator() {
         return []() { return std::unique_ptr<Printer>(new ConsolePrinter()); };
-    }
-
-    template<typename T>
-    static void registerFactory(PrinterGenerator generator) {
-        Registry::registerFactory(getIdentifier<T>(), generator);
-    }
-private:
-
-    template<typename T>
-    static const char *getIdentifier() {
-        return typeid(T).name();
     }
 };
 
