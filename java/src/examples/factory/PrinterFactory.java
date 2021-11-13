@@ -16,6 +16,6 @@ public class PrinterFactory implements Factory<Printer> {
         if (printer != null) {
             return printer;
         }
-        return new OstreamPrinter();
+        return new ConsolePrinter();
     }
 }
